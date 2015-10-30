@@ -1,0 +1,1049 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B9DF3D385657465FF21964C /* libPods-PhotoPark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D8FE2D0BF1061D7DC59CDE /* libPods-PhotoPark.a */; };
+		5551DF9CD20C68FE868B33F8 /* libPods-PhotoParkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5BD38358F56D59FD9D16E0 /* libPods-PhotoParkTests.a */; };
+		E910F1E31BE3871000A387F0 /* PRKKeyedStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F1E21BE3871000A387F0 /* PRKKeyedStoreTests.m */; };
+		E910F2551BE3886300A387F0 /* PRKMediaInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F1E81BE3886300A387F0 /* PRKMediaInfo.m */; };
+		E910F2561BE3886300A387F0 /* PRKMediaNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F1EA1BE3886300A387F0 /* PRKMediaNode.m */; };
+		E910F2571BE3886300A387F0 /* NSError+PRKDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F1EE1BE3886300A387F0 /* NSError+PRKDomain.m */; };
+		E910F2581BE3886300A387F0 /* PRKDropboxHost.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F1F11BE3886300A387F0 /* PRKDropboxHost.m */; };
+		E910F2591BE3886300A387F0 /* PRKAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F1F61BE3886300A387F0 /* PRKAuthenticator.m */; };
+		E910F25A1BE3886300A387F0 /* PRKDropboxAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F1F81BE3886300A387F0 /* PRKDropboxAuthenticator.m */; };
+		E910F25B1BE3886300A387F0 /* PRKTrackableAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F1FA1BE3886300A387F0 /* PRKTrackableAuthenticator.m */; };
+		E910F25C1BE3886300A387F0 /* PRKDropboxDeltaFetchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F1FD1BE3886300A387F0 /* PRKDropboxDeltaFetchResult.m */; };
+		E910F25D1BE3886300A387F0 /* PRKDropboxNodeFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F1FF1BE3886300A387F0 /* PRKDropboxNodeFetcher.m */; };
+		E910F25E1BE3886300A387F0 /* PRKDropboxThumbnailFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2031BE3886300A387F0 /* PRKDropboxThumbnailFetcher.m */; };
+		E910F25F1BE3886300A387F0 /* PRKEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F20A1BE3886300A387F0 /* PRKEnvironment.m */; };
+		E910F2601BE3886300A387F0 /* NSError+PRKInfrastructure.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F20D1BE3886300A387F0 /* NSError+PRKInfrastructure.m */; };
+		E910F2611BE3886300A387F0 /* PRKEphemeralKeyedStoreBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2111BE3886300A387F0 /* PRKEphemeralKeyedStoreBackend.m */; };
+		E910F2621BE3886300A387F0 /* PRKFileKeyedStoreBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2131BE3886300A387F0 /* PRKFileKeyedStoreBackend.m */; };
+		E910F2631BE3886300A387F0 /* PRKKeychainKeyedStoreBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2151BE3886300A387F0 /* PRKKeychainKeyedStoreBackend.m */; };
+		E910F2641BE3886300A387F0 /* PRKUserDefaultsKeyedStoreBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2181BE3886300A387F0 /* PRKUserDefaultsKeyedStoreBackend.m */; };
+		E910F2651BE3886300A387F0 /* PRKKeyedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F21A1BE3886300A387F0 /* PRKKeyedStore.m */; };
+		E910F2661BE3886300A387F0 /* PRKHost.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F21E1BE3886300A387F0 /* PRKHost.m */; };
+		E910F2671BE3886300A387F0 /* PRKTrackableHost.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2201BE3886300A387F0 /* PRKTrackableHost.m */; };
+		E910F2681BE3886300A387F0 /* POSHTTPRequest+PRK.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2231BE3886300A387F0 /* POSHTTPRequest+PRK.m */; };
+		E910F2691BE3886300A387F0 /* PRKHTTPGET.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2251BE3886300A387F0 /* PRKHTTPGET.m */; };
+		E910F26A1BE3886300A387F0 /* PRKHTTPPOST.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2271BE3886300A387F0 /* PRKHTTPPOST.m */; };
+		E910F26B1BE3886300A387F0 /* PRKTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F22A1BE3886300A387F0 /* PRKTracker.m */; };
+		E910F26C1BE3886300A387F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F22B1BE3886300A387F0 /* main.m */; };
+		E910F2781BE3886300A387F0 /* PRKAppAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F24D1BE3886300A387F0 /* PRKAppAssembly.m */; };
+		E910F2791BE3886300A387F0 /* PRKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F24F1BE3886300A387F0 /* PRKAppDelegate.m */; };
+		E910F27A1BE3886300A387F0 /* NSString+PRKInfrastructure.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2521BE3886300A387F0 /* NSString+PRKInfrastructure.m */; };
+		E910F27B1BE3886300A387F0 /* UIDevice+PRKInfrastructure.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2541BE3886300A387F0 /* UIDevice+PRKInfrastructure.m */; };
+		E910F2B01BE41BA700A387F0 /* PRKAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2941BE41BA700A387F0 /* PRKAuthenticationView.m */; };
+		E910F2B11BE41BA700A387F0 /* PRKAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2961BE41BA700A387F0 /* PRKAuthenticationViewController.m */; };
+		E910F2B21BE41BA700A387F0 /* PRKFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2991BE41BA700A387F0 /* PRKFeedCell.m */; };
+		E910F2B31BE41BA700A387F0 /* PRKFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F29B1BE41BA700A387F0 /* PRKFeedViewController.m */; };
+		E910F2B41BE41BA700A387F0 /* PRKLaunchErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F29E1BE41BA700A387F0 /* PRKLaunchErrorViewController.m */; };
+		E910F2B51BE41BA700A387F0 /* PRKLaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2A01BE41BA700A387F0 /* PRKLaunchView.m */; };
+		E910F2B61BE41BA700A387F0 /* PRKLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2A21BE41BA700A387F0 /* PRKLaunchViewController.m */; };
+		E910F2B71BE41BA700A387F0 /* Default.cas in Resources */ = {isa = PBXBuildFile; fileRef = E910F2A41BE41BA700A387F0 /* Default.cas */; };
+		E910F2B81BE41BA700A387F0 /* PRKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2A81BE41BA700A387F0 /* PRKBaseNavigationController.m */; };
+		E910F2B91BE41BA700A387F0 /* PRKPresentationOrchestrator.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2AC1BE41BA700A387F0 /* PRKPresentationOrchestrator.m */; };
+		E910F2BA1BE41BA700A387F0 /* NSBundle+PRKPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = E910F2AF1BE41BA700A387F0 /* NSBundle+PRKPresentation.m */; };
+		E9C0F5811BB09D390007E9DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C0F4BA1BB09D380007E9DD /* Assets.xcassets */; };
+		E9C0F5821BB09D390007E9DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C0F4BB1BB09D380007E9DD /* LaunchScreen.storyboard */; };
+		E9C0F5831BB09D390007E9DD /* NSError.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9C0F4BD1BB09D380007E9DD /* NSError.strings */; };
+		E9C0F7021BB0A40D0007E9DD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C0F7011BB0A40D0007E9DD /* QuartzCore.framework */; };
+		E9C0F7041BB0A4170007E9DD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C0F7031BB0A4170007E9DD /* Security.framework */; };
+		E9C0F7071BB0A4620007E9DD /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C0F7061BB0A4620007E9DD /* DropboxSDK.framework */; };
+		E9C0F7091BB0A7C10007E9DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9C0F7081BB0A7C10007E9DD /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		197B36ACD324CDBC4C09D03E /* Pods-PhotoPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPark.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPark/Pods-PhotoPark.release.xcconfig"; sourceTree = "<group>"; };
+		23D8FE2D0BF1061D7DC59CDE /* libPods-PhotoPark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoPark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE5992A60361AD725FFD061 /* Pods-PhotoPark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPark/Pods-PhotoPark.debug.xcconfig"; sourceTree = "<group>"; };
+		85DC3EDE5B20D3696194BE82 /* Pods-PhotoParkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoParkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoParkTests/Pods-PhotoParkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88B136FA7595C3DA02E1FB62 /* Pods-PhotoParkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoParkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoParkTests/Pods-PhotoParkTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F5BD38358F56D59FD9D16E0 /* libPods-PhotoParkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoParkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E910F1E21BE3871000A387F0 /* PRKKeyedStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKKeyedStoreTests.m; sourceTree = "<group>"; };
+		E910F1E71BE3886300A387F0 /* PRKMediaInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKMediaInfo.h; sourceTree = "<group>"; };
+		E910F1E81BE3886300A387F0 /* PRKMediaInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKMediaInfo.m; sourceTree = "<group>"; };
+		E910F1E91BE3886300A387F0 /* PRKMediaNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKMediaNode.h; sourceTree = "<group>"; };
+		E910F1EA1BE3886300A387F0 /* PRKMediaNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKMediaNode.m; sourceTree = "<group>"; };
+		E910F1ED1BE3886300A387F0 /* NSError+PRKDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+PRKDomain.h"; sourceTree = "<group>"; };
+		E910F1EE1BE3886300A387F0 /* NSError+PRKDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+PRKDomain.m"; sourceTree = "<group>"; };
+		E910F1F01BE3886300A387F0 /* PRKDropboxHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKDropboxHost.h; sourceTree = "<group>"; };
+		E910F1F11BE3886300A387F0 /* PRKDropboxHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKDropboxHost.m; sourceTree = "<group>"; };
+		E910F1F21BE3886300A387F0 /* PRKCloudTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKCloudTypes.h; sourceTree = "<group>"; };
+		E910F1F51BE3886300A387F0 /* PRKAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKAuthenticator.h; sourceTree = "<group>"; };
+		E910F1F61BE3886300A387F0 /* PRKAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKAuthenticator.m; sourceTree = "<group>"; };
+		E910F1F71BE3886300A387F0 /* PRKDropboxAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKDropboxAuthenticator.h; sourceTree = "<group>"; };
+		E910F1F81BE3886300A387F0 /* PRKDropboxAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKDropboxAuthenticator.m; sourceTree = "<group>"; };
+		E910F1F91BE3886300A387F0 /* PRKTrackableAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKTrackableAuthenticator.h; sourceTree = "<group>"; };
+		E910F1FA1BE3886300A387F0 /* PRKTrackableAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKTrackableAuthenticator.m; sourceTree = "<group>"; };
+		E910F1FC1BE3886300A387F0 /* PRKDropboxDeltaFetchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKDropboxDeltaFetchResult.h; sourceTree = "<group>"; };
+		E910F1FD1BE3886300A387F0 /* PRKDropboxDeltaFetchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKDropboxDeltaFetchResult.m; sourceTree = "<group>"; };
+		E910F1FE1BE3886300A387F0 /* PRKDropboxNodeFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKDropboxNodeFetcher.h; sourceTree = "<group>"; };
+		E910F1FF1BE3886300A387F0 /* PRKDropboxNodeFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKDropboxNodeFetcher.m; sourceTree = "<group>"; };
+		E910F2001BE3886300A387F0 /* PRKNodeFecher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKNodeFecher.h; sourceTree = "<group>"; };
+		E910F2021BE3886300A387F0 /* PRKDropboxThumbnailFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKDropboxThumbnailFetcher.h; sourceTree = "<group>"; };
+		E910F2031BE3886300A387F0 /* PRKDropboxThumbnailFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKDropboxThumbnailFetcher.m; sourceTree = "<group>"; };
+		E910F2041BE3886300A387F0 /* PRKThumbnailFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKThumbnailFetcher.h; sourceTree = "<group>"; };
+		E910F2071BE3886300A387F0 /* PRKAppMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKAppMonitor.h; sourceTree = "<group>"; };
+		E910F2091BE3886300A387F0 /* PRKEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKEnvironment.h; sourceTree = "<group>"; };
+		E910F20A1BE3886300A387F0 /* PRKEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKEnvironment.m; sourceTree = "<group>"; };
+		E910F20C1BE3886300A387F0 /* NSError+PRKInfrastructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+PRKInfrastructure.h"; sourceTree = "<group>"; };
+		E910F20D1BE3886300A387F0 /* NSError+PRKInfrastructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+PRKInfrastructure.m"; sourceTree = "<group>"; };
+		E910F2101BE3886300A387F0 /* PRKEphemeralKeyedStoreBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKEphemeralKeyedStoreBackend.h; sourceTree = "<group>"; };
+		E910F2111BE3886300A387F0 /* PRKEphemeralKeyedStoreBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKEphemeralKeyedStoreBackend.m; sourceTree = "<group>"; };
+		E910F2121BE3886300A387F0 /* PRKFileKeyedStoreBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKFileKeyedStoreBackend.h; sourceTree = "<group>"; };
+		E910F2131BE3886300A387F0 /* PRKFileKeyedStoreBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKFileKeyedStoreBackend.m; sourceTree = "<group>"; };
+		E910F2141BE3886300A387F0 /* PRKKeychainKeyedStoreBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKKeychainKeyedStoreBackend.h; sourceTree = "<group>"; };
+		E910F2151BE3886300A387F0 /* PRKKeychainKeyedStoreBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKKeychainKeyedStoreBackend.m; sourceTree = "<group>"; };
+		E910F2161BE3886300A387F0 /* PRKKeyedStoreBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKKeyedStoreBackend.h; sourceTree = "<group>"; };
+		E910F2171BE3886300A387F0 /* PRKUserDefaultsKeyedStoreBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKUserDefaultsKeyedStoreBackend.h; sourceTree = "<group>"; };
+		E910F2181BE3886300A387F0 /* PRKUserDefaultsKeyedStoreBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKUserDefaultsKeyedStoreBackend.m; sourceTree = "<group>"; };
+		E910F2191BE3886300A387F0 /* PRKKeyedStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKKeyedStore.h; sourceTree = "<group>"; };
+		E910F21A1BE3886300A387F0 /* PRKKeyedStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKKeyedStore.m; sourceTree = "<group>"; };
+		E910F21D1BE3886300A387F0 /* PRKHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKHost.h; sourceTree = "<group>"; };
+		E910F21E1BE3886300A387F0 /* PRKHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKHost.m; sourceTree = "<group>"; };
+		E910F21F1BE3886300A387F0 /* PRKTrackableHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKTrackableHost.h; sourceTree = "<group>"; };
+		E910F2201BE3886300A387F0 /* PRKTrackableHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKTrackableHost.m; sourceTree = "<group>"; };
+		E910F2221BE3886300A387F0 /* POSHTTPRequest+PRK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "POSHTTPRequest+PRK.h"; sourceTree = "<group>"; };
+		E910F2231BE3886300A387F0 /* POSHTTPRequest+PRK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "POSHTTPRequest+PRK.m"; sourceTree = "<group>"; };
+		E910F2241BE3886300A387F0 /* PRKHTTPGET.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKHTTPGET.h; sourceTree = "<group>"; };
+		E910F2251BE3886300A387F0 /* PRKHTTPGET.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKHTTPGET.m; sourceTree = "<group>"; };
+		E910F2261BE3886300A387F0 /* PRKHTTPPOST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKHTTPPOST.h; sourceTree = "<group>"; };
+		E910F2271BE3886300A387F0 /* PRKHTTPPOST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKHTTPPOST.m; sourceTree = "<group>"; };
+		E910F2291BE3886300A387F0 /* PRKTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKTracker.h; sourceTree = "<group>"; };
+		E910F22A1BE3886300A387F0 /* PRKTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKTracker.m; sourceTree = "<group>"; };
+		E910F22B1BE3886300A387F0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E910F24C1BE3886300A387F0 /* PRKAppAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKAppAssembly.h; sourceTree = "<group>"; };
+		E910F24D1BE3886300A387F0 /* PRKAppAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKAppAssembly.m; sourceTree = "<group>"; };
+		E910F24E1BE3886300A387F0 /* PRKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKAppDelegate.h; sourceTree = "<group>"; };
+		E910F24F1BE3886300A387F0 /* PRKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKAppDelegate.m; sourceTree = "<group>"; };
+		E910F2511BE3886300A387F0 /* NSString+PRKInfrastructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PRKInfrastructure.h"; sourceTree = "<group>"; };
+		E910F2521BE3886300A387F0 /* NSString+PRKInfrastructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PRKInfrastructure.m"; sourceTree = "<group>"; };
+		E910F2531BE3886300A387F0 /* UIDevice+PRKInfrastructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+PRKInfrastructure.h"; sourceTree = "<group>"; };
+		E910F2541BE3886300A387F0 /* UIDevice+PRKInfrastructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+PRKInfrastructure.m"; sourceTree = "<group>"; };
+		E910F2931BE41BA700A387F0 /* PRKAuthenticationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKAuthenticationView.h; sourceTree = "<group>"; };
+		E910F2941BE41BA700A387F0 /* PRKAuthenticationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKAuthenticationView.m; sourceTree = "<group>"; };
+		E910F2951BE41BA700A387F0 /* PRKAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKAuthenticationViewController.h; sourceTree = "<group>"; };
+		E910F2961BE41BA700A387F0 /* PRKAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKAuthenticationViewController.m; sourceTree = "<group>"; };
+		E910F2981BE41BA700A387F0 /* PRKFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKFeedCell.h; sourceTree = "<group>"; };
+		E910F2991BE41BA700A387F0 /* PRKFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKFeedCell.m; sourceTree = "<group>"; };
+		E910F29A1BE41BA700A387F0 /* PRKFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKFeedViewController.h; sourceTree = "<group>"; };
+		E910F29B1BE41BA700A387F0 /* PRKFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKFeedViewController.m; sourceTree = "<group>"; };
+		E910F29D1BE41BA700A387F0 /* PRKLaunchErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKLaunchErrorViewController.h; sourceTree = "<group>"; };
+		E910F29E1BE41BA700A387F0 /* PRKLaunchErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKLaunchErrorViewController.m; sourceTree = "<group>"; };
+		E910F29F1BE41BA700A387F0 /* PRKLaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKLaunchView.h; sourceTree = "<group>"; };
+		E910F2A01BE41BA700A387F0 /* PRKLaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKLaunchView.m; sourceTree = "<group>"; };
+		E910F2A11BE41BA700A387F0 /* PRKLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKLaunchViewController.h; sourceTree = "<group>"; };
+		E910F2A21BE41BA700A387F0 /* PRKLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKLaunchViewController.m; sourceTree = "<group>"; };
+		E910F2A41BE41BA700A387F0 /* Default.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Default.cas; sourceTree = "<group>"; };
+		E910F2A71BE41BA700A387F0 /* PRKBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKBaseNavigationController.h; sourceTree = "<group>"; };
+		E910F2A81BE41BA700A387F0 /* PRKBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKBaseNavigationController.m; sourceTree = "<group>"; };
+		E910F2AB1BE41BA700A387F0 /* PRKPresentationOrchestrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRKPresentationOrchestrator.h; sourceTree = "<group>"; };
+		E910F2AC1BE41BA700A387F0 /* PRKPresentationOrchestrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRKPresentationOrchestrator.m; sourceTree = "<group>"; };
+		E910F2AE1BE41BA700A387F0 /* NSBundle+PRKPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+PRKPresentation.h"; sourceTree = "<group>"; };
+		E910F2AF1BE41BA700A387F0 /* NSBundle+PRKPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+PRKPresentation.m"; sourceTree = "<group>"; };
+		E9C0F48A1BB08D3C0007E9DD /* PhotoPark-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PhotoPark-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C0F4A31BB08D3C0007E9DD /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C0F4A91BB08D3C0007E9DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C0F4B31BB0924A0007E9DD /* Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Dev.plist; sourceTree = "<group>"; };
+		E9C0F4BA1BB09D380007E9DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9C0F4BB1BB09D380007E9DD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9C0F4BD1BB09D380007E9DD /* NSError.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = NSError.strings; sourceTree = "<group>"; };
+		E9C0F7011BB0A40D0007E9DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E9C0F7031BB0A4170007E9DD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E9C0F7061BB0A4620007E9DD /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = "External/dropbox-ios-sdk-1.3.13/DropboxSDK.framework"; sourceTree = "<group>"; };
+		E9C0F7081BB0A7C10007E9DD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9C0F4871BB08D3C0007E9DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C0F7071BB0A4620007E9DD /* DropboxSDK.framework in Frameworks */,
+				E9C0F7041BB0A4170007E9DD /* Security.framework in Frameworks */,
+				E9C0F7021BB0A40D0007E9DD /* QuartzCore.framework in Frameworks */,
+				1B9DF3D385657465FF21964C /* libPods-PhotoPark.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C0F4A01BB08D3C0007E9DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5551DF9CD20C68FE868B33F8 /* libPods-PhotoParkTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75AAD7EAED498E173045302D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DE5992A60361AD725FFD061 /* Pods-PhotoPark.debug.xcconfig */,
+				197B36ACD324CDBC4C09D03E /* Pods-PhotoPark.release.xcconfig */,
+				85DC3EDE5B20D3696194BE82 /* Pods-PhotoParkTests.debug.xcconfig */,
+				88B136FA7595C3DA02E1FB62 /* Pods-PhotoParkTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E910F1E41BE3886300A387F0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E910F28F1BE41BA700A387F0 /* Application */,
+				E910F1E51BE3886300A387F0 /* Domain */,
+				E910F2051BE3886300A387F0 /* Infrastructure */,
+				E910F2501BE3886300A387F0 /* Utilities */,
+				E910F24C1BE3886300A387F0 /* PRKAppAssembly.h */,
+				E910F24D1BE3886300A387F0 /* PRKAppAssembly.m */,
+				E910F24E1BE3886300A387F0 /* PRKAppDelegate.h */,
+				E910F24F1BE3886300A387F0 /* PRKAppDelegate.m */,
+				E910F22B1BE3886300A387F0 /* main.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E910F1E51BE3886300A387F0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E910F1E61BE3886300A387F0 /* Entities */,
+				E910F1F31BE3886300A387F0 /* Services */,
+				E910F1EB1BE3886300A387F0 /* Infrastructure */,
+				E910F1F21BE3886300A387F0 /* PRKCloudTypes.h */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E910F1E61BE3886300A387F0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E910F1E71BE3886300A387F0 /* PRKMediaInfo.h */,
+				E910F1E81BE3886300A387F0 /* PRKMediaInfo.m */,
+				E910F1E91BE3886300A387F0 /* PRKMediaNode.h */,
+				E910F1EA1BE3886300A387F0 /* PRKMediaNode.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E910F1EB1BE3886300A387F0 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				E910F1EC1BE3886300A387F0 /* ErrorHandling */,
+				E910F1EF1BE3886300A387F0 /* Networking */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		E910F1EC1BE3886300A387F0 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				E910F1ED1BE3886300A387F0 /* NSError+PRKDomain.h */,
+				E910F1EE1BE3886300A387F0 /* NSError+PRKDomain.m */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		E910F1EF1BE3886300A387F0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E910F1F01BE3886300A387F0 /* PRKDropboxHost.h */,
+				E910F1F11BE3886300A387F0 /* PRKDropboxHost.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E910F1F31BE3886300A387F0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E910F1F41BE3886300A387F0 /* Authenticator */,
+				E910F1FB1BE3886300A387F0 /* NodeFetcher */,
+				E910F2011BE3886300A387F0 /* ThumbnailFetcher */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E910F1F41BE3886300A387F0 /* Authenticator */ = {
+			isa = PBXGroup;
+			children = (
+				E910F1F51BE3886300A387F0 /* PRKAuthenticator.h */,
+				E910F1F61BE3886300A387F0 /* PRKAuthenticator.m */,
+				E910F1F71BE3886300A387F0 /* PRKDropboxAuthenticator.h */,
+				E910F1F81BE3886300A387F0 /* PRKDropboxAuthenticator.m */,
+				E910F1F91BE3886300A387F0 /* PRKTrackableAuthenticator.h */,
+				E910F1FA1BE3886300A387F0 /* PRKTrackableAuthenticator.m */,
+			);
+			path = Authenticator;
+			sourceTree = "<group>";
+		};
+		E910F1FB1BE3886300A387F0 /* NodeFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				E910F1FC1BE3886300A387F0 /* PRKDropboxDeltaFetchResult.h */,
+				E910F1FD1BE3886300A387F0 /* PRKDropboxDeltaFetchResult.m */,
+				E910F1FE1BE3886300A387F0 /* PRKDropboxNodeFetcher.h */,
+				E910F1FF1BE3886300A387F0 /* PRKDropboxNodeFetcher.m */,
+				E910F2001BE3886300A387F0 /* PRKNodeFecher.h */,
+			);
+			path = NodeFetcher;
+			sourceTree = "<group>";
+		};
+		E910F2011BE3886300A387F0 /* ThumbnailFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2021BE3886300A387F0 /* PRKDropboxThumbnailFetcher.h */,
+				E910F2031BE3886300A387F0 /* PRKDropboxThumbnailFetcher.m */,
+				E910F2041BE3886300A387F0 /* PRKThumbnailFetcher.h */,
+			);
+			path = ThumbnailFetcher;
+			sourceTree = "<group>";
+		};
+		E910F2051BE3886300A387F0 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2061BE3886300A387F0 /* AppMonitor */,
+				E910F2081BE3886300A387F0 /* Environment */,
+				E910F20B1BE3886300A387F0 /* ErrorHandling */,
+				E910F20E1BE3886300A387F0 /* KeyedStores */,
+				E910F21B1BE3886300A387F0 /* Networking */,
+				E910F2281BE3886300A387F0 /* Tracking */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		E910F2061BE3886300A387F0 /* AppMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2071BE3886300A387F0 /* PRKAppMonitor.h */,
+			);
+			path = AppMonitor;
+			sourceTree = "<group>";
+		};
+		E910F2081BE3886300A387F0 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2091BE3886300A387F0 /* PRKEnvironment.h */,
+				E910F20A1BE3886300A387F0 /* PRKEnvironment.m */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		E910F20B1BE3886300A387F0 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				E910F20C1BE3886300A387F0 /* NSError+PRKInfrastructure.h */,
+				E910F20D1BE3886300A387F0 /* NSError+PRKInfrastructure.m */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		E910F20E1BE3886300A387F0 /* KeyedStores */ = {
+			isa = PBXGroup;
+			children = (
+				E910F20F1BE3886300A387F0 /* Backends */,
+				E910F2191BE3886300A387F0 /* PRKKeyedStore.h */,
+				E910F21A1BE3886300A387F0 /* PRKKeyedStore.m */,
+			);
+			path = KeyedStores;
+			sourceTree = "<group>";
+		};
+		E910F20F1BE3886300A387F0 /* Backends */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2101BE3886300A387F0 /* PRKEphemeralKeyedStoreBackend.h */,
+				E910F2111BE3886300A387F0 /* PRKEphemeralKeyedStoreBackend.m */,
+				E910F2121BE3886300A387F0 /* PRKFileKeyedStoreBackend.h */,
+				E910F2131BE3886300A387F0 /* PRKFileKeyedStoreBackend.m */,
+				E910F2141BE3886300A387F0 /* PRKKeychainKeyedStoreBackend.h */,
+				E910F2151BE3886300A387F0 /* PRKKeychainKeyedStoreBackend.m */,
+				E910F2161BE3886300A387F0 /* PRKKeyedStoreBackend.h */,
+				E910F2171BE3886300A387F0 /* PRKUserDefaultsKeyedStoreBackend.h */,
+				E910F2181BE3886300A387F0 /* PRKUserDefaultsKeyedStoreBackend.m */,
+			);
+			path = Backends;
+			sourceTree = "<group>";
+		};
+		E910F21B1BE3886300A387F0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E910F21C1BE3886300A387F0 /* Hosts */,
+				E910F2211BE3886300A387F0 /* Requests */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E910F21C1BE3886300A387F0 /* Hosts */ = {
+			isa = PBXGroup;
+			children = (
+				E910F21D1BE3886300A387F0 /* PRKHost.h */,
+				E910F21E1BE3886300A387F0 /* PRKHost.m */,
+				E910F21F1BE3886300A387F0 /* PRKTrackableHost.h */,
+				E910F2201BE3886300A387F0 /* PRKTrackableHost.m */,
+			);
+			path = Hosts;
+			sourceTree = "<group>";
+		};
+		E910F2211BE3886300A387F0 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2221BE3886300A387F0 /* POSHTTPRequest+PRK.h */,
+				E910F2231BE3886300A387F0 /* POSHTTPRequest+PRK.m */,
+				E910F2241BE3886300A387F0 /* PRKHTTPGET.h */,
+				E910F2251BE3886300A387F0 /* PRKHTTPGET.m */,
+				E910F2261BE3886300A387F0 /* PRKHTTPPOST.h */,
+				E910F2271BE3886300A387F0 /* PRKHTTPPOST.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		E910F2281BE3886300A387F0 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2291BE3886300A387F0 /* PRKTracker.h */,
+				E910F22A1BE3886300A387F0 /* PRKTracker.m */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		E910F2501BE3886300A387F0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2511BE3886300A387F0 /* NSString+PRKInfrastructure.h */,
+				E910F2521BE3886300A387F0 /* NSString+PRKInfrastructure.m */,
+				E910F2531BE3886300A387F0 /* UIDevice+PRKInfrastructure.h */,
+				E910F2541BE3886300A387F0 /* UIDevice+PRKInfrastructure.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E910F28F1BE41BA700A387F0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2901BE41BA700A387F0 /* Presentation */,
+				E910F2A91BE41BA700A387F0 /* Services */,
+				E910F2AD1BE41BA700A387F0 /* Utilities */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E910F2901BE41BA700A387F0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2911BE41BA700A387F0 /* Pages */,
+				E910F2A31BE41BA700A387F0 /* Styles */,
+				E910F2A51BE41BA700A387F0 /* ViewControllers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E910F2911BE41BA700A387F0 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2921BE41BA700A387F0 /* AuthenticationPage */,
+				E910F2971BE41BA700A387F0 /* FeedPage */,
+				E910F29C1BE41BA700A387F0 /* LaunchPage */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		E910F2921BE41BA700A387F0 /* AuthenticationPage */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2931BE41BA700A387F0 /* PRKAuthenticationView.h */,
+				E910F2941BE41BA700A387F0 /* PRKAuthenticationView.m */,
+				E910F2951BE41BA700A387F0 /* PRKAuthenticationViewController.h */,
+				E910F2961BE41BA700A387F0 /* PRKAuthenticationViewController.m */,
+			);
+			path = AuthenticationPage;
+			sourceTree = "<group>";
+		};
+		E910F2971BE41BA700A387F0 /* FeedPage */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2981BE41BA700A387F0 /* PRKFeedCell.h */,
+				E910F2991BE41BA700A387F0 /* PRKFeedCell.m */,
+				E910F29A1BE41BA700A387F0 /* PRKFeedViewController.h */,
+				E910F29B1BE41BA700A387F0 /* PRKFeedViewController.m */,
+			);
+			path = FeedPage;
+			sourceTree = "<group>";
+		};
+		E910F29C1BE41BA700A387F0 /* LaunchPage */ = {
+			isa = PBXGroup;
+			children = (
+				E910F29D1BE41BA700A387F0 /* PRKLaunchErrorViewController.h */,
+				E910F29E1BE41BA700A387F0 /* PRKLaunchErrorViewController.m */,
+				E910F29F1BE41BA700A387F0 /* PRKLaunchView.h */,
+				E910F2A01BE41BA700A387F0 /* PRKLaunchView.m */,
+				E910F2A11BE41BA700A387F0 /* PRKLaunchViewController.h */,
+				E910F2A21BE41BA700A387F0 /* PRKLaunchViewController.m */,
+			);
+			path = LaunchPage;
+			sourceTree = "<group>";
+		};
+		E910F2A31BE41BA700A387F0 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2A41BE41BA700A387F0 /* Default.cas */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		E910F2A51BE41BA700A387F0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2A61BE41BA700A387F0 /* BaseNavigationController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E910F2A61BE41BA700A387F0 /* BaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2A71BE41BA700A387F0 /* PRKBaseNavigationController.h */,
+				E910F2A81BE41BA700A387F0 /* PRKBaseNavigationController.m */,
+			);
+			path = BaseNavigationController;
+			sourceTree = "<group>";
+		};
+		E910F2A91BE41BA700A387F0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2AA1BE41BA700A387F0 /* PresentationOrchestrator */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E910F2AA1BE41BA700A387F0 /* PresentationOrchestrator */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2AB1BE41BA700A387F0 /* PRKPresentationOrchestrator.h */,
+				E910F2AC1BE41BA700A387F0 /* PRKPresentationOrchestrator.m */,
+			);
+			path = PresentationOrchestrator;
+			sourceTree = "<group>";
+		};
+		E910F2AD1BE41BA700A387F0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E910F2AE1BE41BA700A387F0 /* NSBundle+PRKPresentation.h */,
+				E910F2AF1BE41BA700A387F0 /* NSBundle+PRKPresentation.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E98C666F1BDE1B7200EB3CFE /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				E98C66701BDE1B7200EB3CFE /* KeyedStores */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		E98C66701BDE1B7200EB3CFE /* KeyedStores */ = {
+			isa = PBXGroup;
+			children = (
+				E910F1E21BE3871000A387F0 /* PRKKeyedStoreTests.m */,
+			);
+			path = KeyedStores;
+			sourceTree = "<group>";
+		};
+		E9C0F4811BB08D3C0007E9DD = {
+			isa = PBXGroup;
+			children = (
+				E9C0F4B21BB0924A0007E9DD /* InfoPlists */,
+				E9C0F4B91BB09D380007E9DD /* Resources */,
+				E910F1E41BE3886300A387F0 /* Sources */,
+				E9C0F4A61BB08D3C0007E9DD /* Tests */,
+				E9C0F7051BB0A4300007E9DD /* Frameworks */,
+				E9C0F48B1BB08D3C0007E9DD /* Products */,
+				75AAD7EAED498E173045302D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E9C0F48B1BB08D3C0007E9DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0F48A1BB08D3C0007E9DD /* PhotoPark-Dev.app */,
+				E9C0F4A31BB08D3C0007E9DD /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9C0F4A61BB08D3C0007E9DD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E98C666F1BDE1B7200EB3CFE /* Infrastructure */,
+				E9C0F4A91BB08D3C0007E9DD /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E9C0F4B21BB0924A0007E9DD /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0F4B31BB0924A0007E9DD /* Dev.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		E9C0F4B91BB09D380007E9DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0F4BA1BB09D380007E9DD /* Assets.xcassets */,
+				E9C0F4BB1BB09D380007E9DD /* LaunchScreen.storyboard */,
+				E9C0F4BC1BB09D380007E9DD /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E9C0F4BC1BB09D380007E9DD /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0F7081BB0A7C10007E9DD /* Localizable.strings */,
+				E9C0F4BD1BB09D380007E9DD /* NSError.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		E9C0F7051BB0A4300007E9DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0F7061BB0A4620007E9DD /* DropboxSDK.framework */,
+				E9C0F7031BB0A4170007E9DD /* Security.framework */,
+				E9C0F7011BB0A40D0007E9DD /* QuartzCore.framework */,
+				23D8FE2D0BF1061D7DC59CDE /* libPods-PhotoPark.a */,
+				8F5BD38358F56D59FD9D16E0 /* libPods-PhotoParkTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9C0F4891BB08D3C0007E9DD /* Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C0F4AC1BB08D3C0007E9DD /* Build configuration list for PBXNativeTarget "Dev" */;
+			buildPhases = (
+				87D2EC4E39B575E095550594 /* Check Pods Manifest.lock */,
+				E9C0F4861BB08D3C0007E9DD /* Sources */,
+				E9C0F4871BB08D3C0007E9DD /* Frameworks */,
+				E9C0F4881BB08D3C0007E9DD /* Resources */,
+				B810F92ACF96E8D39505ABB1 /* Embed Pods Frameworks */,
+				FC27EA91A0740152AF4B06DC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dev;
+			productName = Photisfy;
+			productReference = E9C0F48A1BB08D3C0007E9DD /* PhotoPark-Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9C0F4A21BB08D3C0007E9DD /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C0F4AF1BB08D3C0007E9DD /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				2A9F2728CD69865FB1BB095B /* Check Pods Manifest.lock */,
+				E9C0F49F1BB08D3C0007E9DD /* Sources */,
+				E9C0F4A01BB08D3C0007E9DD /* Frameworks */,
+				E9C0F4A11BB08D3C0007E9DD /* Resources */,
+				476B92B61BAC1EDBA8774188 /* Embed Pods Frameworks */,
+				A0D3732911D0FBBE43589C70 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = PhotisfyTests;
+			productReference = E9C0F4A31BB08D3C0007E9DD /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9C0F4821BB08D3C0007E9DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Pavel Osipov";
+				TargetAttributes = {
+					E9C0F4891BB08D3C0007E9DD = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					E9C0F4A21BB08D3C0007E9DD = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = E9C0F4851BB08D3C0007E9DD /* Build configuration list for PBXProject "PhotoPark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9C0F4811BB08D3C0007E9DD;
+			productRefGroup = E9C0F48B1BB08D3C0007E9DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9C0F4891BB08D3C0007E9DD /* Dev */,
+				E9C0F4A21BB08D3C0007E9DD /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9C0F4881BB08D3C0007E9DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E910F2B71BE41BA700A387F0 /* Default.cas in Resources */,
+				E9C0F7091BB0A7C10007E9DD /* Localizable.strings in Resources */,
+				E9C0F5831BB09D390007E9DD /* NSError.strings in Resources */,
+				E9C0F5811BB09D390007E9DD /* Assets.xcassets in Resources */,
+				E9C0F5821BB09D390007E9DD /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C0F4A11BB08D3C0007E9DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A9F2728CD69865FB1BB095B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		476B92B61BAC1EDBA8774188 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoParkTests/Pods-PhotoParkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87D2EC4E39B575E095550594 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0D3732911D0FBBE43589C70 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoParkTests/Pods-PhotoParkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B810F92ACF96E8D39505ABB1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoPark/Pods-PhotoPark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC27EA91A0740152AF4B06DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoPark/Pods-PhotoPark-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9C0F4861BB08D3C0007E9DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E910F2691BE3886300A387F0 /* PRKHTTPGET.m in Sources */,
+				E910F2B01BE41BA700A387F0 /* PRKAuthenticationView.m in Sources */,
+				E910F2B91BE41BA700A387F0 /* PRKPresentationOrchestrator.m in Sources */,
+				E910F25B1BE3886300A387F0 /* PRKTrackableAuthenticator.m in Sources */,
+				E910F2661BE3886300A387F0 /* PRKHost.m in Sources */,
+				E910F25F1BE3886300A387F0 /* PRKEnvironment.m in Sources */,
+				E910F2601BE3886300A387F0 /* NSError+PRKInfrastructure.m in Sources */,
+				E910F25E1BE3886300A387F0 /* PRKDropboxThumbnailFetcher.m in Sources */,
+				E910F2581BE3886300A387F0 /* PRKDropboxHost.m in Sources */,
+				E910F2631BE3886300A387F0 /* PRKKeychainKeyedStoreBackend.m in Sources */,
+				E910F2B51BE41BA700A387F0 /* PRKLaunchView.m in Sources */,
+				E910F2621BE3886300A387F0 /* PRKFileKeyedStoreBackend.m in Sources */,
+				E910F2591BE3886300A387F0 /* PRKAuthenticator.m in Sources */,
+				E910F2641BE3886300A387F0 /* PRKUserDefaultsKeyedStoreBackend.m in Sources */,
+				E910F2561BE3886300A387F0 /* PRKMediaNode.m in Sources */,
+				E910F2651BE3886300A387F0 /* PRKKeyedStore.m in Sources */,
+				E910F26B1BE3886300A387F0 /* PRKTracker.m in Sources */,
+				E910F26A1BE3886300A387F0 /* PRKHTTPPOST.m in Sources */,
+				E910F2571BE3886300A387F0 /* NSError+PRKDomain.m in Sources */,
+				E910F25D1BE3886300A387F0 /* PRKDropboxNodeFetcher.m in Sources */,
+				E910F2B31BE41BA700A387F0 /* PRKFeedViewController.m in Sources */,
+				E910F25C1BE3886300A387F0 /* PRKDropboxDeltaFetchResult.m in Sources */,
+				E910F2781BE3886300A387F0 /* PRKAppAssembly.m in Sources */,
+				E910F27A1BE3886300A387F0 /* NSString+PRKInfrastructure.m in Sources */,
+				E910F2671BE3886300A387F0 /* PRKTrackableHost.m in Sources */,
+				E910F25A1BE3886300A387F0 /* PRKDropboxAuthenticator.m in Sources */,
+				E910F2791BE3886300A387F0 /* PRKAppDelegate.m in Sources */,
+				E910F2B11BE41BA700A387F0 /* PRKAuthenticationViewController.m in Sources */,
+				E910F2B41BE41BA700A387F0 /* PRKLaunchErrorViewController.m in Sources */,
+				E910F2B61BE41BA700A387F0 /* PRKLaunchViewController.m in Sources */,
+				E910F2BA1BE41BA700A387F0 /* NSBundle+PRKPresentation.m in Sources */,
+				E910F2551BE3886300A387F0 /* PRKMediaInfo.m in Sources */,
+				E910F2681BE3886300A387F0 /* POSHTTPRequest+PRK.m in Sources */,
+				E910F27B1BE3886300A387F0 /* UIDevice+PRKInfrastructure.m in Sources */,
+				E910F2B81BE41BA700A387F0 /* PRKBaseNavigationController.m in Sources */,
+				E910F26C1BE3886300A387F0 /* main.m in Sources */,
+				E910F2611BE3886300A387F0 /* PRKEphemeralKeyedStoreBackend.m in Sources */,
+				E910F2B21BE41BA700A387F0 /* PRKFeedCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C0F49F1BB08D3C0007E9DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E910F1E31BE3871000A387F0 /* PRKKeyedStoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E9C0F4AA1BB08D3C0007E9DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRK_DROPBOX_APPKEY = YOUR_APPKEY;
+				PRK_DROPBOX_APPSECRET = YOUR_APPSECRET;
+				PRODUCT_NAME = "$(PROJECT_NAME)-$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9C0F4AB1BB08D3C0007E9DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRK_DROPBOX_APPKEY = YOUR_APPKEY;
+				PRK_DROPBOX_APPSECRET = YOUR_APPSECRET;
+				PRODUCT_NAME = "$(PROJECT_NAME)-$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9C0F4AD1BB08D3C0007E9DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE5992A60361AD725FFD061 /* Pods-PhotoPark.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External/dropbox-ios-sdk-1.3.13",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/InfoPlists/Dev.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pavelosipov.PhotoPark;
+			};
+			name = Debug;
+		};
+		E9C0F4AE1BB08D3C0007E9DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 197B36ACD324CDBC4C09D03E /* Pods-PhotoPark.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External/dropbox-ios-sdk-1.3.13",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/InfoPlists/Dev.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pavelosipov.PhotoPark;
+			};
+			name = Release;
+		};
+		E9C0F4B01BB08D3C0007E9DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85DC3EDE5B20D3696194BE82 /* Pods-PhotoParkTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pavelosipov.PhotoParkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9C0F4B11BB08D3C0007E9DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88B136FA7595C3DA02E1FB62 /* Pods-PhotoParkTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pavelosipov.PhotoParkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9C0F4851BB08D3C0007E9DD /* Build configuration list for PBXProject "PhotoPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C0F4AA1BB08D3C0007E9DD /* Debug */,
+				E9C0F4AB1BB08D3C0007E9DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C0F4AC1BB08D3C0007E9DD /* Build configuration list for PBXNativeTarget "Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C0F4AD1BB08D3C0007E9DD /* Debug */,
+				E9C0F4AE1BB08D3C0007E9DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C0F4AF1BB08D3C0007E9DD /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C0F4B01BB08D3C0007E9DD /* Debug */,
+				E9C0F4B11BB08D3C0007E9DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9C0F4821BB08D3C0007E9DD /* Project object */;
+}

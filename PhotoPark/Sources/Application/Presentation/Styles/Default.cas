@@ -1,0 +1,13 @@
+//
+//  Default.cas
+//  PhotoPark
+//
+//  Created by Pavel Osipov on 14.03.15.
+//  Copyright (c) 2015 Pavel Osipov. All rights reserved.
+//
+
+$brand-color = blue
+
+UIButton.login {
+    background-color $brand-color
+}
